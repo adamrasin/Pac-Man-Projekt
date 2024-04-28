@@ -14,30 +14,17 @@ namespace Pac_Man_Game
     {
         bool godown, goup, goright, goleft, isGameOver;
 
-        int score, playerSpeed;
+        int score, playerSpeed, redGhostSpeed, pinkGhostX, pinkGhostY,orangeGhostSpeed;
         public Form1()
         {
             InitializeComponent();
             resetGame();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void keyisdown(object sender, KeyEventArgs e)
-        { 
+        {
             if (e.KeyCode == Keys.Up)
             {
                 goup = true;
@@ -80,8 +67,40 @@ namespace Pac_Man_Game
         {
             score = 0;
             txtScore.Text = "Score: 0";
+            redGhostSpeed = 5;
+            orangeGhostSpeed = 5;
+            pinkGhostX = 5;
+            pinkGhostY = 5;
+
+            pacman.Left = 52;
+            pacman.Top = 59;
+
+            redGhost.Left = 102;
+            redGhost.Top = 414;
+
+            orangeGhost.Left = 52;
+            orangeGhost.Top = 270;
+
+            pinkGhost.Left = 391;
+            pinkGhost.Top = 111;
+
+            foreach (Control X  in this.Controls)
+            {
+                if (X is PictureBox)
+                {
+                    X.Visible = true;
+                }
+            }
+
             playerSpeed = 8;
             isGameOver = false;
+
+            gameTimer.Start();
+        }
+
+        private void gameOver(string message)
+        {
+
         }
 
         private void mainGameTimer(object sender, EventArgs e)
@@ -89,19 +108,23 @@ namespace Pac_Man_Game
             txtScore.Text = "Score: " + score;
             if (goleft == true)
             {
-               
+               pacman.Left -= playerSpeed;
+               pacman.Image = Properties.Resources.Pac_Man_Left;
             }
             if (goright == true)
             {
-
+                pacman.Left += playerSpeed;
+                pacman.Image = Properties.Resources.Pac_Man_Right;
             }
             if (godown == true)
             {
-
+                pacman.Top += playerSpeed;
+                pacman.Image = Properties.Resources.Pac_Man_Down;
             }
             if (goup == true)
             {
-
+                pacman.Top -= playerSpeed;
+                pacman.Image = Properties.Resources.Pac_Man_Up;
             }
 
 
@@ -116,6 +139,103 @@ namespace Pac_Man_Game
                     }
                 }
             }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void redGhost_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
