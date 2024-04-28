@@ -74,7 +74,7 @@ namespace Pac_Man_Game
             redGhostSpeed = 5;
             orangeGhostSpeed = 5;
             pinkGhostSpeed = 5;
-            blueGhostSpeed = 5;
+            blueGhostSpeed = 1;
 
             pacman.Left = 52;
             pacman.Top = 59;
@@ -99,7 +99,7 @@ namespace Pac_Man_Game
                 }
             }
 
-            playerSpeed = 8;
+            playerSpeed = 6;
             isGameOver = false;
 
             gameTimer.Start();
@@ -209,62 +209,28 @@ namespace Pac_Man_Game
                 blueGhostSpeed = -blueGhostSpeed;
             }
             
-            if (score == 21)
+            if (score == 30)
             {
                 gameOver("W, jses goat teto hry!");
             }
         }
 
+        private void pictureBox38_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void pictureBox41_Click(object sender, EventArgs e)
+        {
 
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

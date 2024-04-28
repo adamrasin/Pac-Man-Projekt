@@ -70,6 +70,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.blueGhost = new System.Windows.Forms.PictureBox();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.pictureBox42 = new System.Windows.Forms.PictureBox();
+            this.pictureBox43 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pacman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pinkGhost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orangeGhost)).BeginInit();
@@ -109,6 +118,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueGhost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             this.SuspendLayout();
             // 
             // txtScore
@@ -181,9 +199,9 @@
             // pictureBox14
             // 
             this.pictureBox14.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox14.Location = new System.Drawing.Point(298, 75);
+            this.pictureBox14.Location = new System.Drawing.Point(298, 92);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(214, 30);
+            this.pictureBox14.Size = new System.Drawing.Size(201, 13);
             this.pictureBox14.TabIndex = 14;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Tag = "wall";
@@ -191,9 +209,9 @@
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox13.Location = new System.Drawing.Point(479, 75);
+            this.pictureBox13.Location = new System.Drawing.Point(474, 92);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(33, 204);
+            this.pictureBox13.Size = new System.Drawing.Size(25, 204);
             this.pictureBox13.TabIndex = 13;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Tag = "wall";
@@ -203,7 +221,7 @@
             this.pictureBox12.BackColor = System.Drawing.Color.Blue;
             this.pictureBox12.Location = new System.Drawing.Point(391, 398);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(41, 107);
+            this.pictureBox12.Size = new System.Drawing.Size(19, 76);
             this.pictureBox12.TabIndex = 12;
             this.pictureBox12.TabStop = false;
             this.pictureBox12.Tag = "wall";
@@ -231,9 +249,9 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox9.Location = new System.Drawing.Point(61, 380);
+            this.pictureBox9.Location = new System.Drawing.Point(83, 388);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(35, 105);
+            this.pictureBox9.Size = new System.Drawing.Size(14, 105);
             this.pictureBox9.TabIndex = 9;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Tag = "wall";
@@ -243,7 +261,7 @@
             this.pictureBox8.BackColor = System.Drawing.Color.Blue;
             this.pictureBox8.Location = new System.Drawing.Point(391, 398);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(94, 22);
+            this.pictureBox8.Size = new System.Drawing.Size(81, 22);
             this.pictureBox8.TabIndex = 8;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Tag = "wall";
@@ -261,9 +279,9 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox6.Location = new System.Drawing.Point(61, 480);
+            this.pictureBox6.Location = new System.Drawing.Point(83, 480);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(136, 25);
+            this.pictureBox6.Size = new System.Drawing.Size(114, 13);
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Tag = "wall";
@@ -274,27 +292,30 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Blue;
             this.pictureBox5.Location = new System.Drawing.Point(-2, 12);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(16, 540);
+            this.pictureBox5.Size = new System.Drawing.Size(10, 571);
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Tag = "wall";
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox4.Location = new System.Drawing.Point(569, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(575, 12);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(16, 550);
+            this.pictureBox4.Size = new System.Drawing.Size(10, 571);
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "wall";
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox3.Location = new System.Drawing.Point(-2, 551);
+            this.pictureBox3.Location = new System.Drawing.Point(-2, 573);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(587, 17);
+            this.pictureBox3.Size = new System.Drawing.Size(587, 10);
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "wall";
             // 
             // pictureBox2
             // 
@@ -304,12 +325,13 @@
             this.pictureBox2.Size = new System.Drawing.Size(587, 19);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "wall";
             // 
             // pictureBox17
             // 
             this.pictureBox17.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox17.Image = global::Pac_Man_Game.Properties.Resources.Coin;
-            this.pictureBox17.Location = new System.Drawing.Point(61, 520);
+            this.pictureBox17.Location = new System.Drawing.Point(39, 520);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(25, 25);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -337,7 +359,7 @@
             // 
             this.pictureBox19.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox19.Image = global::Pac_Man_Game.Properties.Resources.Coin;
-            this.pictureBox19.Location = new System.Drawing.Point(487, 318);
+            this.pictureBox19.Location = new System.Drawing.Point(524, 318);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(25, 25);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -351,7 +373,7 @@
             // 
             this.pictureBox20.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox20.Image = global::Pac_Man_Game.Properties.Resources.Coin;
-            this.pictureBox20.Location = new System.Drawing.Point(266, 80);
+            this.pictureBox20.Location = new System.Drawing.Point(246, 80);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(25, 25);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -364,7 +386,7 @@
             // 
             this.pictureBox21.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox21.Image = global::Pac_Man_Game.Properties.Resources.Coin;
-            this.pictureBox21.Location = new System.Drawing.Point(146, 520);
+            this.pictureBox21.Location = new System.Drawing.Point(150, 520);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(25, 25);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -372,6 +394,7 @@
             this.pictureBox21.TabStop = false;
             this.pictureBox21.Tag = "coin";
             this.pictureBox21.Visible = false;
+            this.pictureBox21.Click += new System.EventHandler(this.pictureBox21_Click);
             // 
             // pictureBox22
             // 
@@ -390,7 +413,7 @@
             // 
             this.pictureBox23.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox23.Image = global::Pac_Man_Game.Properties.Resources.Coin;
-            this.pictureBox23.Location = new System.Drawing.Point(506, 414);
+            this.pictureBox23.Location = new System.Drawing.Point(524, 414);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(25, 25);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -403,7 +426,7 @@
             // 
             this.pictureBox24.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox24.Image = global::Pac_Man_Game.Properties.Resources.Coin;
-            this.pictureBox24.Location = new System.Drawing.Point(506, 505);
+            this.pictureBox24.Location = new System.Drawing.Point(524, 520);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -560,7 +583,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.Image = global::Pac_Man_Game.Properties.Resources.Coin;
-            this.pictureBox1.Location = new System.Drawing.Point(266, 520);
+            this.pictureBox1.Location = new System.Drawing.Point(524, 100);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -594,12 +617,140 @@
             this.blueGhost.TabStop = false;
             this.blueGhost.Tag = "ghost";
             // 
+            // pictureBox35
+            // 
+            this.pictureBox35.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox35.Image = global::Pac_Man_Game.Properties.Resources.Coin;
+            this.pictureBox35.Location = new System.Drawing.Point(298, 40);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox35.TabIndex = 42;
+            this.pictureBox35.TabStop = false;
+            this.pictureBox35.Tag = "coin";
+            this.pictureBox35.Visible = false;
+            // 
+            // pictureBox36
+            // 
+            this.pictureBox36.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox36.Image = global::Pac_Man_Game.Properties.Resources.Coin;
+            this.pictureBox36.Location = new System.Drawing.Point(524, 205);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox36.TabIndex = 43;
+            this.pictureBox36.TabStop = false;
+            this.pictureBox36.Tag = "coin";
+            this.pictureBox36.Visible = false;
+            // 
+            // pictureBox37
+            // 
+            this.pictureBox37.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox37.Image = global::Pac_Man_Game.Properties.Resources.Coin;
+            this.pictureBox37.Location = new System.Drawing.Point(212, 40);
+            this.pictureBox37.Name = "pictureBox37";
+            this.pictureBox37.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox37.TabIndex = 44;
+            this.pictureBox37.TabStop = false;
+            this.pictureBox37.Tag = "coin";
+            this.pictureBox37.Visible = false;
+            // 
+            // pictureBox38
+            // 
+            this.pictureBox38.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox38.Image = global::Pac_Man_Game.Properties.Resources.Coin;
+            this.pictureBox38.Location = new System.Drawing.Point(474, 40);
+            this.pictureBox38.Name = "pictureBox38";
+            this.pictureBox38.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox38.TabIndex = 45;
+            this.pictureBox38.TabStop = false;
+            this.pictureBox38.Tag = "coin";
+            this.pictureBox38.Visible = false;
+            this.pictureBox38.Click += new System.EventHandler(this.pictureBox38_Click);
+            // 
+            // pictureBox39
+            // 
+            this.pictureBox39.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox39.Image = global::Pac_Man_Game.Properties.Resources.Coin;
+            this.pictureBox39.Location = new System.Drawing.Point(391, 40);
+            this.pictureBox39.Name = "pictureBox39";
+            this.pictureBox39.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox39.TabIndex = 46;
+            this.pictureBox39.TabStop = false;
+            this.pictureBox39.Tag = "coin";
+            this.pictureBox39.Visible = false;
+            // 
+            // pictureBox40
+            // 
+            this.pictureBox40.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox40.Image = global::Pac_Man_Game.Properties.Resources.Coin;
+            this.pictureBox40.Location = new System.Drawing.Point(39, 432);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox40.TabIndex = 47;
+            this.pictureBox40.TabStop = false;
+            this.pictureBox40.Tag = "coin";
+            this.pictureBox40.Visible = false;
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox41.Image = global::Pac_Man_Game.Properties.Resources.Coin;
+            this.pictureBox41.Location = new System.Drawing.Point(280, 520);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox41.TabIndex = 48;
+            this.pictureBox41.TabStop = false;
+            this.pictureBox41.Tag = "coin";
+            this.pictureBox41.Visible = false;
+            this.pictureBox41.Click += new System.EventHandler(this.pictureBox41_Click);
+            // 
+            // pictureBox42
+            // 
+            this.pictureBox42.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox42.Image = global::Pac_Man_Game.Properties.Resources.Coin;
+            this.pictureBox42.Location = new System.Drawing.Point(447, 449);
+            this.pictureBox42.Name = "pictureBox42";
+            this.pictureBox42.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox42.TabIndex = 49;
+            this.pictureBox42.TabStop = false;
+            this.pictureBox42.Tag = "coin";
+            this.pictureBox42.Visible = false;
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox43.Image = global::Pac_Man_Game.Properties.Resources.Coin;
+            this.pictureBox43.Location = new System.Drawing.Point(391, 520);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox43.TabIndex = 50;
+            this.pictureBox43.TabStop = false;
+            this.pictureBox43.Tag = "coin";
+            this.pictureBox43.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(584, 661);
+            this.Controls.Add(this.pictureBox43);
+            this.Controls.Add(this.pictureBox42);
+            this.Controls.Add(this.pictureBox41);
+            this.Controls.Add(this.pictureBox40);
+            this.Controls.Add(this.pictureBox39);
+            this.Controls.Add(this.pictureBox38);
+            this.Controls.Add(this.pictureBox37);
+            this.Controls.Add(this.pictureBox36);
+            this.Controls.Add(this.pictureBox35);
             this.Controls.Add(this.blueGhost);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox1);
@@ -685,6 +836,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueGhost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -732,6 +892,15 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox blueGhost;
+        private System.Windows.Forms.PictureBox pictureBox35;
+        private System.Windows.Forms.PictureBox pictureBox36;
+        private System.Windows.Forms.PictureBox pictureBox37;
+        private System.Windows.Forms.PictureBox pictureBox38;
+        private System.Windows.Forms.PictureBox pictureBox39;
+        private System.Windows.Forms.PictureBox pictureBox40;
+        private System.Windows.Forms.PictureBox pictureBox41;
+        private System.Windows.Forms.PictureBox pictureBox42;
+        private System.Windows.Forms.PictureBox pictureBox43;
     }
 }
 
