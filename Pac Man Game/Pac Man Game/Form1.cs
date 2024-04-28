@@ -14,7 +14,7 @@ namespace Pac_Man_Game
     {
         bool godown, goup, goright, goleft, isGameOver;
 
-        int score, playerSpeed, redGhostSpeed, pinkGhostX, pinkGhostY,orangeGhostSpeed;
+        int score, playerSpeed, redGhostSpeed, pinkGhostSpeed,orangeGhostSpeed, blueGhostSpeed;
         public Form1()
         {
             InitializeComponent();
@@ -61,6 +61,10 @@ namespace Pac_Man_Game
             {
                 goright = false;
             }
+            if(e.KeyCode == Keys.Enter && isGameOver == true)
+            {
+                resetGame();
+            }
         }
 
         private void resetGame()
@@ -69,8 +73,8 @@ namespace Pac_Man_Game
             txtScore.Text = "Score: 0";
             redGhostSpeed = 5;
             orangeGhostSpeed = 5;
-            pinkGhostX = 5;
-            pinkGhostY = 5;
+            pinkGhostSpeed = 5;
+            blueGhostSpeed = 5;
 
             pacman.Left = 52;
             pacman.Top = 59;
@@ -83,6 +87,9 @@ namespace Pac_Man_Game
 
             pinkGhost.Left = 391;
             pinkGhost.Top = 111;
+
+            blueGhost.Left = 266;
+            blueGhost.Top = 221;
 
             foreach (Control X  in this.Controls)
             {
@@ -100,7 +107,9 @@ namespace Pac_Man_Game
 
         private void gameOver(string message)
         {
-
+            isGameOver = true;
+            gameTimer.Stop();
+            txtScore.Text = "Score: " + score + Environment.NewLine + message;
         }
 
         private void mainGameTimer(object sender, EventArgs e)
@@ -108,8 +117,8 @@ namespace Pac_Man_Game
             txtScore.Text = "Score: " + score;
             if (goleft == true)
             {
-               pacman.Left -= playerSpeed;
-               pacman.Image = Properties.Resources.Pac_Man_Left;
+                pacman.Left -= playerSpeed;
+                pacman.Image = Properties.Resources.Pac_Man_Left;
             }
             if (goright == true)
             {
@@ -127,7 +136,22 @@ namespace Pac_Man_Game
                 pacman.Image = Properties.Resources.Pac_Man_Up;
             }
 
-
+            if (pacman.Left < -10)
+            {
+                pacman.Left = 600;
+            }
+            if (pacman.Left > 600)
+            {
+                pacman.Left = -10;
+            }
+            if (pacman.Top < 19)
+            {
+                pacman.Top = 540;
+            }
+            if (pacman.Top > 540)
+            {
+                pacman.Top = 19;
+            }
 
             foreach(Control x in this.Controls)
             {
@@ -135,14 +159,61 @@ namespace Pac_Man_Game
                 {
                     if ((string)x.Tag == "coin" && x.Visible == true)
                     {
-                       
+                       if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            score += 1;
+                            x.Visible = false;
+                        }
+                    }
+                    if ((string)x.Tag == "wall")
+                    {
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            gameOver("Jsi L!");
+                        }
+                    }
+                    if (((string)x.Tag == "ghost"))
+                    {
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            gameOver("Jsi L!");
+                        }
                     }
                 }
             }
+            redGhost.Left += redGhostSpeed;
+
+            if (redGhost.Bounds.IntersectsWith(pictureBox9.Bounds) || redGhost.Bounds.IntersectsWith(pictureBox12.Bounds))
+            {
+                redGhostSpeed = -redGhostSpeed;
+            }
+
+            orangeGhost.Left += orangeGhostSpeed;
+
+            if (orangeGhost.Bounds.IntersectsWith(pictureBox5.Bounds) || orangeGhost.Bounds.IntersectsWith(pictureBox10.Bounds))
+            {
+                orangeGhostSpeed = -orangeGhostSpeed;
+            }
+
+            pinkGhost.Top += pinkGhostSpeed;
+
+            if (pinkGhost.Bounds.IntersectsWith(pictureBox14.Bounds) || pinkGhost.Bounds.IntersectsWith(pictureBox12.Bounds))
+            {
+                pinkGhostSpeed = -pinkGhostSpeed;
+            }
+
+            blueGhost.Top += blueGhostSpeed;
+
+            if (blueGhost.Bounds.IntersectsWith(pictureBox14.Bounds) || blueGhost.Bounds.IntersectsWith(pictureBox7.Bounds))
+            {
+                blueGhostSpeed = -blueGhostSpeed;
+            }
+            
+            if (score == 21)
+            {
+                gameOver("W, jses goat teto hry!");
+            }
         }
-
-
-
 
 
 
